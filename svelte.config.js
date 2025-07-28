@@ -14,6 +14,23 @@ const config = {
 		adapter: adapter({ out: "build" }),
 	},
 	preprocess: [vitePreprocess({})],
+	vite: {
+		optimizeDeps: {
+		  include: ['pocketbase']
+		},
+		build: {
+		  target: 'node18',
+		  outDir: 'build',
+		  assetsDir: 'assets',
+		  manifest: true,
+		  ssr: true,
+		  lib: {
+			entry: 'src/main.js',
+			name: 'App',
+			fileName: 'app'
+		  }
+		}
+	  }
 };
 
 export default config;
