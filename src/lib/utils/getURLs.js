@@ -1,4 +1,4 @@
-export const url = "http://sandra-hruza-cms.cr.fugbach.one" // dev local
+export const url = "https://sandra-hruza-cms.cr.fugbach.one" // dev local
 
 export const getImageURL = (collectionId, recordId, fileName, size = '0x0') => {
 	return `/api/files/${collectionId}/${recordId}/${fileName}?thumb=${size}`
