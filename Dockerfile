@@ -9,7 +9,7 @@ RUN cp /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN npm install --verbose
 RUN npm run build
 
-FROM node:21.6-alpine
+FROM node:22-alpine
 WORKDIR /usr/src/app
 
 ARG TZ=Europe/Vienna
