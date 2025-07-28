@@ -1,4 +1,4 @@
-FROM node:18-alpine AS sk-build
+FROM node:21.6-alpine AS sk-build
 WORKDIR /usr/src/app
 
 ARG TZ=Europe/Vienna
